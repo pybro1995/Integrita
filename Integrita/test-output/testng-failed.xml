@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
-    <groups>
-      <run>
-        <include name="ete1"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="scripts.TestSignInPage">
+      <class name="scripts.TestCanvasCreation">
         <methods>
-          <include name="testValidSignInPage"/>
+          <include name="openBrowser"/>
+          <include name="testCanvasCreation"/>
         </methods>
-      </class> <!-- scripts.TestSignInPage -->
+      </class> <!-- scripts.TestCanvasCreation -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

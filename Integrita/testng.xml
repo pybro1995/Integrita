@@ -2,16 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
-  <groups>
-  	<run>
-  		<include name="ete1" />
-  	</run>
-  </groups>
-   <!-- <classes>
-    
-     <class name="scripts.TestSignInPage"/> 
-     <class name="scripts.TestCanvasCreation"/>
-      
-    </classes>-->  
+    <classes>
+      <class name="scripts.TestCanvasCreation"/>
+      <class name="scripts.TestSignInPage"/>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

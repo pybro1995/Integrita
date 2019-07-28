@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="6" started-at="2019-07-27T21:07:20Z" finished-at="2019-07-27T21:07:20Z">
+  <suite name="Default suite" duration-ms="143487" started-at="2019-07-28T07:37:37Z" finished-at="2019-07-28T07:40:01Z">
     <groups>
+      <group name="ete1">
+        <method signature="TestCanvasCreation.testCanvasCreation()[pri:0, instance:scripts.TestCanvasCreation@4c70fda8]" name="testCanvasCreation" class="scripts.TestCanvasCreation"/>
+      </group> <!-- ete1 -->
     </groups>
-    <test name="Test" duration-ms="6" started-at="2019-07-27T21:07:20Z" finished-at="2019-07-27T21:07:20Z">
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    <test name="Default test" duration-ms="143487" started-at="2019-07-28T07:37:37Z" finished-at="2019-07-28T07:40:01Z">
+      <class name="scripts.TestCanvasCreation">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:scripts.TestCanvasCreation@4c70fda8]" name="openBrowser" is-config="true" duration-ms="6179" started-at="2019-07-28T13:07:37Z" finished-at="2019-07-28T13:07:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="testCanvasCreation()[pri:0, instance:scripts.TestCanvasCreation@4c70fda8]" name="testCanvasCreation" duration-ms="137295" started-at="2019-07-28T13:07:44Z" finished-at="2019-07-28T13:10:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCanvasCreation -->
+      </class> <!-- scripts.TestCanvasCreation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

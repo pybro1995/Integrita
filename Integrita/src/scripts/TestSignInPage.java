@@ -10,7 +10,7 @@ import pages.SignInPage;
 public class TestSignInPage extends BaseTest {
 	
 	
-	@Test(groups = "ete1")
+	@Test
 	public void testValidSignInPage() 
 	{SignInPage sp = new SignInPage(driver);
 		//SignInPage sp = new SignInPage(driver);
@@ -29,9 +29,5 @@ public class TestSignInPage extends BaseTest {
 			
 	}
 	
-//	@Test
-//	public void testInvalidSignInPage()
-//	{
-//		
-//	}
+
 }

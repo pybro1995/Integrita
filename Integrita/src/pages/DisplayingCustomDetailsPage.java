@@ -7,42 +7,16 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DisplayingCustomDetailsPage {
 	
-	@FindBy(linkText = "Home")
-	private WebElement home;
-	
-	@FindBy(id="Campaignstab")
-	private WebElement canvas;
-	
-		public  class CanvasListPage {
-			@FindBy(xpath="//input[@value='New Campaign']")
-			private  WebElement newCanvasButton;
-			
-			public CanvasListPage(WebDriver driver) {
-				PageFactory.initElements(driver, this);
-			}
-			
-			
-		}
-		
-		CanvasListPage clp;
+	@FindBy(xpath="//input[@value='New Campaign']")
+	private  WebElement newCanvasButton;
 	
 	public DisplayingCustomDetailsPage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
-		clp = new CanvasListPage(driver);
 		
+		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickOnCanvas() {
-		canvas.click();
+	public void clickOnNewCanvasButton() {
+		newCanvasButton.click();
 	}
-	
-	public  void clickOnNewCanvasButton() {
-		clp.newCanvasButton.click();
-	}
-	public  WebElement getNewCanvasButton() {
-		return this.clp.newCanvasButton; 
-	}
-	
-	
 	
 }
