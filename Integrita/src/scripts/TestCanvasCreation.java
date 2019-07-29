@@ -15,7 +15,7 @@ import pages.SignInPage;
 
 public class TestCanvasCreation extends BaseTest {
 	
-	@Test
+	@Test 
 	public void testCanvasCreation() throws Exception {
 		
 		SignInPage sp = new SignInPage(driver);
@@ -39,9 +39,6 @@ public class TestCanvasCreation extends BaseTest {
 		
 		DisplayingCustomDetailsPage cnvsList = new DisplayingCustomDetailsPage(driver);
 		cnvsList.clickOnNewCanvasButton();
-		
-		
-		
-		
+				
 	}
 }

@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -25,9 +27,15 @@ public class BaseTest implements IAutoConstant {
 		wait = new WebDriverWait(driver, 10);
 	}
 	
-//	@AfterMethod
-//	public void closeBrowser()
-//	{
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void closeBrowser(ITestResult re)
+	{
+		driver.quit();
+		Reporter.log(re.getStatus()+"",true);
+		
+		if(re.getStatus()==2)
+		{
+			
+		}
+	}
 }

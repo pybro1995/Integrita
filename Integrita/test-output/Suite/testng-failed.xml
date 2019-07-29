@@ -8,6 +8,11 @@
       </run>
     </groups>
     <classes>
+      <class name="scripts.TestCanvasCreation">
+        <methods>
+          <include name="testCanvasCreation"/>
+        </methods>
+      </class> <!-- scripts.TestCanvasCreation -->
       <class name="scripts.TestSignInPage">
         <methods>
           <include name="testValidSignInPage"/>

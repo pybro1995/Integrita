@@ -10,12 +10,12 @@ import pages.SignInPage;
 public class TestSignInPage extends BaseTest {
 	
 	
-	@Test
+	@Test 
 	public void testValidSignInPage() 
 	{SignInPage sp = new SignInPage(driver);
 		//SignInPage sp = new SignInPage(driver);
 		String username = FWUtils.getXLData( XLPATH, "SignInCredentials", 1, 0);
-		String password = FWUtils.getXLData( XLPATH , "SignInCredentials", 1, 1);
+		String password = FWUtils.getXLData( XLPATH, "SignInCredentials", 1, 1);
 		//Reporter.log(password,true);
 		sp.setUsername(username);
 		sp.setPassword(password);
